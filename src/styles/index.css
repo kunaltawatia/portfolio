@@ -1,0 +1,98 @@
+.home {
+  margin: 0 6rem;
+  height: 85vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 48px;
+}
+
+.name-hindi {
+  font-size: 28px;
+}
+.profile-img {
+  width: 18rem;
+  transform: scaleX(-1);
+}
+
+.profile-img.desktop {
+  float: left;
+  left: -2rem;
+  margin: 0 0 2rem 0;
+  shape-outside: ellipse(7rem 12rem at 50% 50%);
+  border-bottom-left-radius: 12rem;
+}
+
+.profile-description {
+  max-width: 56rem;
+  margin-top: 2rem;
+  font-size: 17px;
+  text-decoration: dashed;
+}
+
+.mobile {
+  display: none;
+}
+
+.home-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 48rem) {
+  .home {
+    text-align: center;
+    margin: 0 1.5rem 2rem;
+    height: auto;
+  }
+
+  .home-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-footer > * {
+    margin: 0.3rem 0;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .name-hindi {
+    font-size: 24px;
+  }
+  .profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: initial;
+    font-size: 16px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: initial;
+  }
+
+  .profile-img {
+    border-radius: 1rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .dunk-video {
+    margin: 2rem 0;
+    opacity: 1;
+    width: 100%;
+    height: auto !important;
+    border-radius: 1rem;
+    position: relative;
+  }
+}

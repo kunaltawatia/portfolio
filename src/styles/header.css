@@ -1,0 +1,29 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links > * {
+  margin: 0 0.5rem;
+}
+
+.links > .underline {
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 48rem) {
+  .header {
+    background-color: #fafafd98;
+    text-align: center;
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+  .header > * {
+    margin: 0.5rem;
+  }
+}
