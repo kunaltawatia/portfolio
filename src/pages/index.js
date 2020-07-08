@@ -65,14 +65,7 @@ const IndexPage = ({ data }) => {
         </video>
       </div>
 
-      <div className="home-footer">
-        <button type="button" className="btn resume">
-          Resume
-        </button>
-        <button type="button" className="btn resume">
-          Resume
-        </button>
-      </div>
+      <div className="home-footer" />
     </div>
   )
 }
